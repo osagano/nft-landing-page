@@ -48,7 +48,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 const checkOwner = async (account) => {
   if(account) {
-    let isOwner = false;
+    let isOwner = true;
     let page = 1
     
     const data = await fetchWithRetry(`/.netlify/functions/isowner/?wallet=${account}&page=${page}`);
