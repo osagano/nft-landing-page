@@ -55,7 +55,7 @@ const getOwnedNfts = async (wallet, page) => {
     const total = data.total;
     const pages = total;
     data.nfts.forEach(nft => {
-      if(nft.contract_address === CONTRACT) {
+      if(nft.contract_address === '0xC3C62E97c85EA5D8D2EdC39034e9dfc6452a50D1') {
         editions.push(nft.token_id)
       }
     })
