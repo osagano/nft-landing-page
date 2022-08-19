@@ -36,6 +36,7 @@ const getOwnedNfts = async (wallet, page) => {
   
   const options = {
     method: 'GET',
+    qs: {chain: 'ethereum'},
     headers: {
       'Content-Type': 'application/json',
       Authorization: AUTH
