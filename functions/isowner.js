@@ -53,7 +53,7 @@ const getOwnedNfts = async (wallet, page) => {
     const data = await fetchData(url + query, options)
     console.log(`Recieved page ${page}`)
     const total = data.total;
-    const pages = Math.ceil(total / 50);
+    const pages = total;
     data.nfts.forEach(nft => {
       if(nft.contract_address === CONTRACT) {
         editions.push(nft.token_id)
